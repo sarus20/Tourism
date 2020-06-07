@@ -1,38 +1,229 @@
-.App {
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: lightgrey;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  .App{
+    background:wheat;
+    max-width: 60%;
+    margin: auto;
+  }
+  nav{
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid gray;
+      background-color: orangered;
+      padding :10px 20px;
+  }
+
+  .nav-menu li {
+       display:inline-block;
+        list-style: none;
+
+  }
+
+  .nav-menu-link{
+
+    display: inline-block;
+    margin:5px;
+    border-bottom:1px solid grey;
+    text-decoration: none;
+    border-radius: 5px;
+    padding :3px 8px;
+    background-color: wheat;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-menu-link:hover{
+    border:1px solid black;
+    background-color: whitesmoke ;
+    transition: all 0.3s ease-in-out;
+    cursor:pointer;
+
+  }
+
+  .nav-menu-link.active {
+       background-color: royalblue;
+       color:wheat;
+  }
+
+
+  .logo-link{
+      color: whitesmoke;
+      text-decoration: none;
+  }
+
+  .main-content{
+
+    width:90%;
+    margin:auto;
+    padding-bottom: 50px;
+
+  }
+
+  .main-content h2{
+         text-align: center;
+         margin-bottom: 20px;
+  }
+
+  .home-image{
+
+    width: 100%;
+    height:500px;
+    background-image: url("https://static2.tripoto.com/media/filter/nl/img/560240/SpotDocument/1528709012_1528708400_1497356850_1497356823_6830189619_46cf099aa8_o.jpg") ;
+    background-size: cover;
+    margin-bottom: 50px;
+    transition: all 0.3s ease-in-out;
+   
+  }
+  .home-image:hover{
+
+     background-image: url("https://static2.tripoto.com/media/filter/nl/img/560240/SpotDocument/1528709012_1528708400_1497356850_1497356823_6830189619_46cf099aa8_o.jpg") ;
+     cursor: pointer;
+     transform: scale(1.05);
+     transition: all 0.3s ease-in-out;
+  }
+
+
+  .thumbnail-container{
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+
+}
+
+.home-thumbnail-1,
+.home-thumbnail-2,
+.home-thumbnail-3,
+.home-thumbnail-4{
+
+  width:  200px;
+  height: 100px;
+  background-size: cover;
+  transition: all 0.3s ease-in-out;
+}
+.home-thumbnail-1:hover,
+.home-thumbnail-2:hover,
+.home-thumbnail-3:hover,
+.home-thumbnail-4:hover{
+
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.home-thumbnail-1{
+    background-image:url("https://www.planetware.com/photos-large/IND/india-top-attractions-taj-mahal.jpg");
+} 
+.home-thumbnail-2{
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSR7RcO5RNFPKgUBvkV1KnLAyJTLn9ERiXttjVCbGGmhX_GuPXI&usqp=CAU");
+} 
+.home-thumbnail-3{
+    background-image:url("https://static2.tripoto.com/media/filter/nl/img/1/SpotDocument/1497360293_1497360238_19010450133_be213cbff2_o.jpg");
+} 
+.home-thumbnail-4{
+    background-image:url("https://static2.tripoto.com/media/filter/nl/img/1/SpotDocument/1497358580_1497358527_16515862738_d49049bea2_o.jpg");
+} 
+
+.container{
+    margin:auto;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.place-container{
+
+    display :inline-block;
+    text-align: center;
+
+}
+
+.place-image{
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    
+
+}
+
+
+.place-image:hover{
+
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+
+}
+
+
+.back{
+    display: inline-block;
+    margin: 5px;
+    border:1px solid burlywood;
+    padding :3px 8px;
+    border-radius:5px;
+    background-color: royalblue;
+    text-decoration: none;
+
+}
+
+.temple-container{
+
+    display :inline-block;
+    text-align: center;
+
+}
+
+.temple-image{
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    
+   
+}
+
+.temple-image:hover{
+
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+
+}
+
+
+.image-profile{
+
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+}
+
+.food-container{
+  display :inline-block;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.food-image{
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+ 
+ 
 }
+.food-image:hover{
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
